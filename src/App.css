@@ -1,0 +1,23 @@
+img{
+  width: 60px;
+  height: 60px;
+float: right;  
+}
+p{
+  display:flex;
+  width: 100px;
+}
+.Text{
+ width: auto;
+ margin-left: 10px;
+}
+div{
+  
+  display:inline-block;
+}
+.Card{
+  margin-left: 15px;
+  width: 405px;
+  height: 420px;
+  margin-bottom: 10px;
+}
