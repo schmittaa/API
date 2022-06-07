@@ -7,12 +7,11 @@ function ListProfile() {
     const [listOfUSer, setlistOfUSer] = useState([]);
     
     useEffect(() => {
-        fetch("https://jsonplaceholder.typicode.com/users")
-          .then(res => res.json())
+         axios("https://jsonplaceholder.typicode.com/users")
           .then(
             (result) => {
               setIsLoaded(true);
-              setlistOfUSer(result);
+              setlistOfUSer(result.data);
             },(error) => {
                 setIsLoaded(true);
                 setError(error);
