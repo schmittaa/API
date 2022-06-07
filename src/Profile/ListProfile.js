@@ -8,7 +8,7 @@ function ListProfile() {
     const [listOfUSer, setlistOfUSer] = useState([]);
     
     useEffect(() => {
-         axios("https://jsonplaceholder.typicode.com/users")
+         axios.get("https://jsonplaceholder.typicode.com/users")
           .then(
             (result) => {
               setIsLoaded(true);
